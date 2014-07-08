@@ -1,0 +1,7 @@
+1	2,3|0|WHITE| null
+2	4,5|Integer.MAX_VALUE|WHITE| null
+3	6|Integer.MAX_VALUE|WHITE| null
+4	7|Integer.MAX_VALUE|WHITE| null
+5	|Integer.MAX_VALUE|WHITE| null
+6	|Integer.MAX_VALUE|WHITE| null
+7	|Integer.MAX_VALUE|WHITE| null

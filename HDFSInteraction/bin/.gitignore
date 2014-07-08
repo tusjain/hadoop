@@ -1,0 +1,6 @@
+/connectToHDFS
+/listContentsOfHDFSDirectory
+/readAndWriteSequenseFile
+/readFromHDFS
+/readWriteAssignment
+/writeToHDFS

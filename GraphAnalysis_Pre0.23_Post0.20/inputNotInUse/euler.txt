@@ -1,0 +1,4 @@
+A	B,D|Integer.MAX_VALUE|WHITE|null
+B	A,D,C|Integer.MAX_VALUE|WHITE|A
+D	A,B,C|Integer.MAX_VALUE|WHITE|A
+C	B,D|Integer.MAX_VALUE|WHITE|D

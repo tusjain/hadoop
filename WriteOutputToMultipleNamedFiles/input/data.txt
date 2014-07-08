@@ -1,0 +1,8 @@
+Name:Ram
+Age:27
+Name:Sita
+Age:29
+Name:Gita
+Age:24
+Name:Yash
+Age:16

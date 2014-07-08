@@ -1,0 +1,79 @@
+2014-04-21 16:02:04,690 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2014-04-21 16:02:07,137 WARN org.apache.hadoop.conf.Configuration: session.id is deprecated. Instead, use dfs.metrics.session-id
+2014-04-21 16:02:07,141 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2014-04-21 16:02:10,090 WARN org.apache.hadoop.mapreduce.JobSubmitter: Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+2014-04-21 16:02:10,099 WARN org.apache.hadoop.mapreduce.JobSubmitter: No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2014-04-21 16:02:10,400 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat: Total input paths to process : 4
+2014-04-21 16:02:10,665 INFO org.apache.hadoop.mapreduce.JobSubmitter: number of splits:1
+2014-04-21 16:02:10,957 WARN org.apache.hadoop.conf.Configuration: mapred.output.value.class is deprecated. Instead, use mapreduce.job.output.value.class
+2014-04-21 16:02:10,960 WARN org.apache.hadoop.conf.Configuration: mapreduce.map.class is deprecated. Instead, use mapreduce.job.map.class
+2014-04-21 16:02:10,961 WARN org.apache.hadoop.conf.Configuration: mapred.job.name is deprecated. Instead, use mapreduce.job.name
+2014-04-21 16:02:10,961 WARN org.apache.hadoop.conf.Configuration: mapreduce.reduce.class is deprecated. Instead, use mapreduce.job.reduce.class
+2014-04-21 16:02:10,962 WARN org.apache.hadoop.conf.Configuration: mapreduce.inputformat.class is deprecated. Instead, use mapreduce.job.inputformat.class
+2014-04-21 16:02:10,963 WARN org.apache.hadoop.conf.Configuration: mapred.input.dir is deprecated. Instead, use mapreduce.input.fileinputformat.inputdir
+2014-04-21 16:02:10,963 WARN org.apache.hadoop.conf.Configuration: mapred.output.dir is deprecated. Instead, use mapreduce.output.fileoutputformat.outputdir
+2014-04-21 16:02:10,964 WARN org.apache.hadoop.conf.Configuration: mapred.map.tasks is deprecated. Instead, use mapreduce.job.maps
+2014-04-21 16:02:10,965 WARN org.apache.hadoop.conf.Configuration: mapred.output.key.class is deprecated. Instead, use mapreduce.job.output.key.class
+2014-04-21 16:02:10,965 WARN org.apache.hadoop.conf.Configuration: mapred.working.dir is deprecated. Instead, use mapreduce.job.working.dir
+2014-04-21 16:02:11,730 INFO org.apache.hadoop.mapreduce.JobSubmitter: Submitting tokens for job: job_local2090874127_0001
+2014-04-21 16:02:14,510 INFO org.apache.hadoop.mapreduce.Job: The url to track the job: http://localhost:8080/
+2014-04-21 16:02:14,511 INFO org.apache.hadoop.mapreduce.Job: Running job: job_local2090874127_0001
+2014-04-21 16:02:15,048 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter set in config null
+2014-04-21 16:02:15,541 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2014-04-21 16:02:16,048 INFO org.apache.hadoop.mapreduce.Job: Job job_local2090874127_0001 running in uber mode : false
+2014-04-21 16:02:16,229 INFO org.apache.hadoop.mapreduce.Job:  map 0% reduce 0%
+2014-04-21 16:02:16,232 INFO org.apache.hadoop.mapred.LocalJobRunner: Waiting for map tasks
+2014-04-21 16:02:16,234 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local2090874127_0001_m_000000_0
+2014-04-21 16:02:19,124 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-04-21 16:02:19,207 INFO org.apache.hadoop.mapred.MapTask: Processing split: Paths:/home/cloudera/workspace/ProcessSmallCompressedFilesUsingCombineFileInputFormat/input/011610-99999-1989.gz:0+75896,/home/cloudera/workspace/ProcessSmallCompressedFilesUsingCombineFileInputFormat/input/UnoExample-master(1).zip:0+17174,/home/cloudera/workspace/ProcessSmallCompressedFilesUsingCombineFileInputFormat/input/039550-99999-1999.gz:0+473125,/home/cloudera/workspace/ProcessSmallCompressedFilesUsingCombineFileInputFormat/input/036720-99999-1981.gz:0+125929
+2014-04-21 16:02:20,410 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2014-04-21 16:02:23,669 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2014-04-21 16:02:23,913 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2014-04-21 16:02:23,916 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2014-04-21 16:02:23,917 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2014-04-21 16:02:23,918 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2014-04-21 16:02:32,945 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-04-21 16:02:33,484 INFO org.apache.hadoop.mapred.LocalJobRunner: Map task executor complete.
+2014-04-21 16:02:33,679 INFO org.apache.hadoop.mapreduce.Job:  map 7% reduce 0%
+2014-04-21 16:02:33,787 WARN org.apache.hadoop.mapred.LocalJobRunner: job_local2090874127_0001
+java.lang.Exception: java.lang.StringIndexOutOfBoundsException: String index out of range: 19
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:401)
+Caused by: java.lang.StringIndexOutOfBoundsException: String index out of range: 19
+	at java.lang.String.substring(String.java:1934)
+	at mapReduce.MaxTemperatureMapper.map(MaxTemperatureMapper.java:23)
+	at mapReduce.MaxTemperatureMapper.map(MaxTemperatureMapper.java:1)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:144)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:756)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:338)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:233)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+2014-04-21 16:02:34,681 INFO org.apache.hadoop.mapreduce.Job: Job job_local2090874127_0001 failed with state FAILED due to: NA
+2014-04-21 16:02:35,093 INFO org.apache.hadoop.mapreduce.Job: Counters: 20
+	File System Counters
+		FILE: Number of bytes read=1010454
+		FILE: Number of bytes written=1104827
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=5300
+		Map output records=5271
+		Map output bytes=47439
+		Map output materialized bytes=0
+		Input split bytes=591
+		Combine input records=0
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=128
+		CPU time spent (ms)=0
+		Physical memory (bytes) snapshot=0
+		Virtual memory (bytes) snapshot=0
+		Total committed heap usage (bytes)=134811648
+	File Input Format Counters 
+		Bytes Read=0
