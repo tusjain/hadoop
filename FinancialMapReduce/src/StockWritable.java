@@ -22,6 +22,8 @@ import java.math.BigDecimal;
 import org.apache.hadoop.hbase.util.Bytes;
 import org.apache.hadoop.io.Writable;
 
+//import com.google.common.primitives.Bytes;
+
 /**
  * Writable representing a stock's price on a given day
  *
