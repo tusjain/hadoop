@@ -1,6 +1,5 @@
-// == MaxTemperatureDriverV4
-// vv MaxTemperatureDriverV4
-package v4;
+package improved;
+//== MaxTemperatureDriverV6
 
 import org.apache.hadoop.conf.*;
 import org.apache.hadoop.fs.Path;
@@ -8,7 +7,6 @@ import org.apache.hadoop.io.*;
 import org.apache.hadoop.mapred.*;
 import org.apache.hadoop.util.*;
 
-import v1.MaxTemperatureReducer;
 
 public class MaxTemperatureDriver extends Configured implements Tool {
 
@@ -33,6 +31,13 @@ public class MaxTemperatureDriver extends Configured implements Tool {
     conf.setMapperClass(MaxTemperatureMapper.class);
     conf.setCombinerClass(MaxTemperatureReducer.class);
     conf.setReducerClass(MaxTemperatureReducer.class);
+    
+    //vv MaxTemperatureDriverV6
+    conf.setProfileEnabled(true);
+    conf.setProfileParams("-agentlib:hprof=cpu=samples,heap=sites,depth=6," +
+    		"force=n,thread=y,verbose=n,file=%s");
+    conf.setProfileTaskRange(true, "0-2");
+    //^^ MaxTemperatureDriverV6
 
     JobClient.runJob(conf);
     return 0;
@@ -43,4 +48,4 @@ public class MaxTemperatureDriver extends Configured implements Tool {
     System.exit(exitCode);
   }
 }
-//^^ MaxTemperatureDriverV4
+

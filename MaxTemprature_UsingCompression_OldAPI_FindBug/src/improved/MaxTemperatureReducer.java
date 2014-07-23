@@ -1,4 +1,4 @@
-package v1;
+package improved;
 // == MaxTemperatureReducerV1
 import java.io.IOException;
 import java.util.Iterator;

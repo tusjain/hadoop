@@ -1,4 +1,4 @@
-package v3;
+package improved;
 // cc MaxTemperatureDriverTestV3 A test for MaxTemperatureDriver that uses a local, in-process job runner
 import static org.hamcrest.Matchers.*;
 import static org.junit.Assert.assertThat;

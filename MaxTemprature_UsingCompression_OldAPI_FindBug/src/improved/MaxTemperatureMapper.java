@@ -1,4 +1,4 @@
-package v7;
+package improved;
 // cc MaxTemperatureMapperV7 Reusing the Text and IntWritable output objects
 import java.io.IOException;
 
@@ -9,7 +9,6 @@ import org.apache.hadoop.mapred.MapReduceBase;
 import org.apache.hadoop.mapred.Mapper;
 import org.apache.hadoop.mapred.OutputCollector;
 import org.apache.hadoop.mapred.Reporter;
-import v5.NcdcRecordParser;
 
 // vv MaxTemperatureMapperV7
 public class MaxTemperatureMapper extends MapReduceBase

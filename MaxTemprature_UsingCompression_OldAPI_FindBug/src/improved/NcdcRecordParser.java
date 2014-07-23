@@ -1,5 +1,5 @@
 // cc NcdcRecordParserV5 A class for parsing weather records in NCDC format
-package v5;
+package improved;
 import org.apache.hadoop.io.Text;
 
 // vv NcdcRecordParserV5
