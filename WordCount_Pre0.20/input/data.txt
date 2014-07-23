@@ -1,0 +1,10 @@
+This is a sample input file.
+This is the second line.
+What ius special about third line.
+Fourth line comes at fourth place.
+We have five fingures in one hand.
+Six double of three.
+Seven is not enough.
+Is eight is enough?
+Nine is three times of three.
+Ten is enough.
