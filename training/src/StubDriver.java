@@ -29,6 +29,8 @@ public class StubDriver {
      * This job name will appear in reports and logs.
      */
     job.setJobName("Stub Driver");
+    job.setMapperClass(StubMapper.class);
+    job.setReducerClass(StubReducer.class);
 
     /*
      * TODO implement

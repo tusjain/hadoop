@@ -14,7 +14,6 @@ public class WordCountDriver {
           System.exit(-1);
         }
    
-   
         Job job = Job.getInstance(new Configuration());
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
@@ -31,11 +30,5 @@ public class WordCountDriver {
         job.setJarByClass(WordCountDriver.class);
  
         job.submit();
-         
-         
-         
-   
- 
-   
  }
 }
