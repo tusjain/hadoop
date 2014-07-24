@@ -22,12 +22,14 @@ public class CustomDataType {
        public static class LogProcessMap extends MapReduceBase implements Mapper<LongWritable, Text, Text, LogWritable> {
               @Override
               public void map(LongWritable key, Text value, OutputCollector<Text, LogWritable> output, Reporter reporter) throws IOException {
+            	  
               }
        }
 
        public static class LogProcessReduce extends MapReduceBase implements Reducer<Text, LogWritable, Text, IntWritable> {
               @Override
               public void reduce(Text key, Iterator<LogWritable> values, OutputCollector<Text, IntWritable> output, Reporter reporter) throws IOException {
+            	  
               }
        }
 
@@ -52,5 +54,4 @@ public class CustomDataType {
 
               JobClient.runJob(newconf);
        }
-
 }

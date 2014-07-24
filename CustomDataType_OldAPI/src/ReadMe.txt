@@ -10,5 +10,4 @@ entries. For the purpose of this sample, we consider that a log entry consists o
 fields—request host, timestamp, request URL, response size, and the http status code.
 
 The following is a sample log entry:
-192.168.0.2 - - [01/Jul/1995:00:00:01 -0400] "GET /history/apollo/
-HTTP/1.0" 200 6245
+192.168.0.2 - - [01/Jul/1995:00:00:01 -0400] "GET /history/apollo/HTTP/1.0" 200 6245
