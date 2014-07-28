@@ -20,7 +20,7 @@ public class WithToolWordCountDriver extends Configured implements Tool{
 
 		// When implementing tool
 		Configuration conf = this.getConf();
-
+		
 		// Create job
 		Job job = new Job(conf, "Tool Job");
 		job.setJarByClass(WithToolWordCountDriver.class);
@@ -41,7 +41,7 @@ public class WithToolWordCountDriver extends Configured implements Tool{
 		// Output
 		FileOutputFormat.setOutputPath(job, new Path(args[1]));
 		job.setOutputFormatClass(TextOutputFormat.class);
-
+		
 		// Execute job and return status
 		return job.waitForCompletion(true) ? 0 : 1;
 
@@ -50,7 +50,7 @@ public class WithToolWordCountDriver extends Configured implements Tool{
 	public static void main(String args[]) throws Exception{
 		// Let ToolRunner handle generic command line options
 		int res = ToolRunner.run(new Configuration(), new WithToolWordCountDriver(), args);
-	}
+		}
 	/*
  	public static void main(String[] args) throws Exception{
 	   if (args.length != 2) {
