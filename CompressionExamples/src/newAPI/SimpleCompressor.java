@@ -20,8 +20,6 @@ public class SimpleCompressor extends Configured implements Tool{
 		Configuration conf = new Configuration();
 		Job job = new Job(conf, "simpleCompressor");
 		
-		job.setJarByClass(SimpleDecompressor.class);
-	
 		FileInputFormat.addInputPath(job, new Path(args[0]));
 		FileOutputFormat.setOutputPath(job, new Path(args[1]));
 		
@@ -29,6 +27,7 @@ public class SimpleCompressor extends Configured implements Tool{
 		//FileOutputFormat.setOutputCompressorClass(job, DefaultCodec.class);
 		
 		FileOutputFormat.setOutputCompressorClass(job, BZip2Codec.class);
+		job.setJarByClass(SimpleDecompressor.class);
 		
 		
 		return (job.waitForCompletion(true) ? 0:1);
