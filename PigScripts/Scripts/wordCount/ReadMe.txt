@@ -1,0 +1,5 @@
+1) Run Pig Word Count using Local Mode
+ 	bin/pig -x local wordcount.pig
+2) Run Pig Word Count using Hadoop Mode
+	a.configure Hadoop cluster
+	b.bin/pig -x mapreduce wordcount.pig
