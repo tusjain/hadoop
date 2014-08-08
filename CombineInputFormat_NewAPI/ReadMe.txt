@@ -1,0 +1,1 @@
+hadoop jar /home/cloudera/Desktop/CombineFileInputFormat_NewAPI.jar TestMain <src> <dst>
