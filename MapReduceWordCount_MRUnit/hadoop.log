@@ -1,3 +1,0 @@
-2014-06-20 20:09:44,586 ERROR org.apache.hadoop.mrunit.TestDriver: Matched expected output (horse, 1) but at incorrect position 0 (expected position 1)
-2014-06-20 20:09:44,599 ERROR org.apache.hadoop.mrunit.TestDriver: Received unexpected output (horse, 1) at position 1.
-2014-06-20 20:09:44,599 ERROR org.apache.hadoop.mrunit.TestDriver: Missing expected output (horse1, 1) at position 0.
