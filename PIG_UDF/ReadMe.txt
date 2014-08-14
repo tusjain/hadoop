@@ -20,7 +20,7 @@
 	
 	
 	
-4.   In the prior UDF, we implemented only the exec(Tuple) function to parse out the station data. 
+4.  In the prior UDF, we implemented only the exec(Tuple) function to parse out the station data. 
 	The result of this requires that we define data schema within the script. While this provides an 
 	added measure of flexibility it also requires that we do more in the Pig Script (and if your going
 	through the trouble to build a UDF why not include the schema.

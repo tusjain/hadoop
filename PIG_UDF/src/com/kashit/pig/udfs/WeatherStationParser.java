@@ -17,7 +17,6 @@ public class WeatherStationParser extends EvalFunc {
         //Expect the unexpected and then handle it gracefully
         if (tuple == null || tuple.size() != 1)
             return null;
-
         try{
             //Get the data row
             String row = (String)tuple.get(0);
@@ -26,8 +25,7 @@ public class WeatherStationParser extends EvalFunc {
              * Kludgy...but effective filter header rows
              * by length. Should do regex pattern matching
              */
-            if (row.length() > 95)
-            {
+            if (row.length() > 95){
                 //Use the tuple factory to create a new tuple                                
                 Tuple t = tupleFactory.newTuple();
 
@@ -36,7 +34,6 @@ public class WeatherStationParser extends EvalFunc {
                 t.append(ParseString(row, 13, 43)); //STATION_ID       
                 t.append(GetLatitude(GetFloatFromString(row, 58, 64))); //LAT
                 t.append(GetLongitude(GetFloatFromString(row, 65, 73))); //LOT
-
                 //Return the tuple
                 return t;
             } else {
@@ -46,8 +43,7 @@ public class WeatherStationParser extends EvalFunc {
                  */                
                 return null;
             }
-        } catch (Exception ex)
-        {
+        } catch (Exception ex){
             /*
              * Uh-oh something went wrong....
              * Return NULL...consider logging this error
@@ -60,8 +56,7 @@ public class WeatherStationParser extends EvalFunc {
     /*
      * Helper Methods
      */
-    private Float GetLatitude(float val)
-    {
+    private Float GetLatitude(float val){
         //Filter out NULL Latitudes
         if (val == 0f || Math.abs(val) == 99999f)
             return null;
@@ -70,8 +65,7 @@ public class WeatherStationParser extends EvalFunc {
         return val/1000f;
     }
 
-    private Float GetLongitude(float val)
-    {
+    private Float GetLongitude(float val){
         //Filter out NULL Longitudes
         if (val == 0f || Math.abs(val) == 999999f)
             return null;
@@ -80,14 +74,12 @@ public class WeatherStationParser extends EvalFunc {
         return val/1000f;
     }
 
-    private String ParseString(String s, int start, int stop)
-    {
+    private String ParseString(String s, int start, int stop) {
         //Parse the string 
         return s.substring(start, stop).trim();
     }
 
-    private int GetIntFromString(String s, int start, int stop)
-    {
+    private int GetIntFromString(String s, int start, int stop){
         /*
          * Parse the string and remove the '+' plus sign 
          * before we convert it to an integer
@@ -99,8 +91,7 @@ public class WeatherStationParser extends EvalFunc {
         return Integer.parseInt(substring);
     }
 
-    private float GetFloatFromString(String s, int start, int stop)
-    {
+    private float GetFloatFromString(String s, int start, int stop){
         /*
          * Parse the string and remove the '+' plus sign 
          * before we convert it to an float
