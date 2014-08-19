@@ -1,21 +1,18 @@
-<!---------------------------------------------------------------------------->
-<!--Coordinator defintion file for LogParser app - coordinator.xml ----------->
-<!---------------------------------------------------------------------------->
- 
-<coordinator-app name="CoordApp-LogParser"
-frequency="${coord:days(1)}"
-start="${startTime}"
-end="${endTime}"
-timezone="${timeZoneDef}"
-xmlns="uri:oozie:coordinator:0.2">
-<controls>
-<timeout>20</timeout>
-<concurrency>6</concurrency>
-<execution>FIFO</execution>
-</controls>
-<action>
-<workflow>
-<app-path>${workflowAppLogParserPath}</app-path>
-</workflow>
-</action>
+<!-------------------------------------------------------------------------- -->
+<!--Coordinator defintion file for LogParser app - coordinator.xml --------- -->
+<!-------------------------------------------------------------------------- -->
+
+<coordinator-app name="CoordApp-LogParser" frequency="${coord:days(1)}"
+	start="${startTime}" end="${endTime}" timezone="${timeZoneDef}"
+	xmlns="uri:oozie:coordinator:0.2">
+	<controls>
+		<timeout>20</timeout>
+		<concurrency>6</concurrency>
+		<execution>FIFO</execution>
+	</controls>
+	<action>
+		<workflow>
+			<app-path>${workflowAppLogParserPath}</app-path>
+		</workflow>
+	</action>
 </coordinator-app>
