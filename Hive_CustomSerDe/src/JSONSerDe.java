@@ -63,20 +63,16 @@ public class JSONSerDe implements SerDe {
 	 * actual serialization and deserialization of data.
 	 */
 	@Override
-	public void initialize(Configuration conf, Properties tbl)
-			throws SerDeException {
+	public void initialize(Configuration conf, Properties tbl) throws SerDeException {
 		// Get a list of the table's column names.
 		String colNamesStr = tbl.getProperty(serdeConstants.LIST_COLUMNS);
 		colNames = Arrays.asList(colNamesStr.split(","));
 		// Get a list of TypeInfos for the columns. This list lines up with
 		// the list of column names.
 		String colTypesStr = tbl.getProperty(serdeConstants.LIST_COLUMN_TYPES);
-		List<TypeInfo> colTypes =
-				TypeInfoUtils.getTypeInfosFromTypeString(colTypesStr);
-		rowTypeInfo =
-				(StructTypeInfo) TypeInfoFactory.getStructTypeInfo(colNames, colTypes);
-		rowOI =
-				TypeInfoUtils.getStandardJavaObjectInspectorFromTypeInfo(rowTypeInfo);
+		List<TypeInfo> colTypes = TypeInfoUtils.getTypeInfosFromTypeString(colTypesStr);
+		rowTypeInfo = (StructTypeInfo) TypeInfoFactory.getStructTypeInfo(colNames, colTypes);
+		rowOI = TypeInfoUtils.getStandardJavaObjectInspectorFromTypeInfo(rowTypeInfo);
 	}
 	/**
 	 * This method does the work of deserializing a record into Java objects that

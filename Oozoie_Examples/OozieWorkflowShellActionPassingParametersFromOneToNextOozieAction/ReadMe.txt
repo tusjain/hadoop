@@ -25,7 +25,7 @@ Directory structure
 -------------------
 oozieProject
 	data
-		airawat-syslog
+		kashit-syslog
 			<<Node-Name>>
 				<<Year>>
 					<<Month>>

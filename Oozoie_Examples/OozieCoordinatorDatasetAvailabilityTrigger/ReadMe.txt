@@ -65,12 +65,12 @@ Mysql database setup tasks
 a) Create database:
  
 mysql>
-create database airawat;
+create database kashit;
  
 b) Switch to database created:
  
 mysql>
-use airawat;
+use kashit;
  
 c) Create destination table for sqoop export from hdfs:
  
@@ -82,7 +82,7 @@ occurrence INTEGER);
 d) Ensure your sqoop user has access to database created:
  
 mysql>
-grant all on airawat.* to myUser@'myMachine';
+grant all on kashit.* to myUser@'myMachine';
 
 *************************************************************
 Sqoop command - try out the command to see if it works
@@ -96,7 +96,7 @@ Command:
 --Run on node that acts as sqoop client;
  
 $ sqoop export \
---connect jdbc:mysql://cdh-dev01/airawat \
+--connect jdbc:mysql://cdh-dev01/kashit \
 --username devUser \
 --password myPwd \
 --table Logged_Process_Count_By_Year \

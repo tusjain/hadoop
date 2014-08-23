@@ -44,7 +44,7 @@ Directory structure applicable for this blog/gist:
 --------------------------------------------------
 oozieProject
 	data
-		airawat-syslog
+		kashit-syslog
 			<<Node-Name>>
 				<<Year>>
 					<<Month>>

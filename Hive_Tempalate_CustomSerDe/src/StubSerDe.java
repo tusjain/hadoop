@@ -33,8 +33,7 @@ public class StubSerDe implements SerDe {
   * perform actual serialization and deserialization of data.
   */
  @Override
- public void initialize(Configuration conf, Properties tbl)
-     throws SerDeException {
+ public void initialize(Configuration conf, Properties tbl) throws SerDeException {
    // Get a list of the table's column names.
    String colNamesStr = tbl.getProperty(Constants.LIST_COLUMNS);
    colNames = Arrays.asList(colNamesStr.split(","));
@@ -42,13 +41,10 @@ public class StubSerDe implements SerDe {
    // Get a list of TypeInfos for the columns. This list lines up with
    // the list of column names.
    String colTypesStr = tbl.getProperty(Constants.LIST_COLUMN_TYPES);
-   List<TypeInfo> colTypes =
-       TypeInfoUtils.getTypeInfosFromTypeString(colTypesStr);
+   List<TypeInfo> colTypes = TypeInfoUtils.getTypeInfosFromTypeString(colTypesStr);
   
-   rowTypeInfo =
-       (StructTypeInfo) TypeInfoFactory.getStructTypeInfo(colNames, colTypes);
-   rowOI =
-       TypeInfoUtils.getStandardJavaObjectInspectorFromTypeInfo(rowTypeInfo);
+   rowTypeInfo = (StructTypeInfo) TypeInfoFactory.getStructTypeInfo(colNames, colTypes);
+   rowOI = TypeInfoUtils.getStandardJavaObjectInspectorFromTypeInfo(rowTypeInfo);
  }
 
  /**

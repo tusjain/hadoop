@@ -55,7 +55,7 @@ Directory structure
 -------------------
 oozieProject
 	data
-	airawat-syslog
+	kashit-syslog
 		<<Node-Name>>
 			<<Year>>
 				<<Month>>
@@ -142,33 +142,33 @@ Note: Replace my user ID "akhanolk" with yours
 hive >
  
 Alter table SysLogEvents Add IF NOT EXISTS partition(node="cdh-dev01",year=2013, month=04)
-location '/user/akhanolk/oozieProject/data/airawat-syslog/cdh-dev01/2013/04/';
+location '/user/akhanolk/oozieProject/data/kashit-syslog/cdh-dev01/2013/04/';
 Alter table SysLogEvents Add IF NOT EXISTS partition(node="cdh-dev01",year=2013, month=05)
-location '/user/akhanolk/oozieProject/data/airawat-syslog/cdh-dev01/2013/05/';
+location '/user/akhanolk/oozieProject/data/kashit-syslog/cdh-dev01/2013/05/';
  
 Alter table SysLogEvents Add IF NOT EXISTS partition(node="cdh-dn01",year=2013, month=05)
-location '/user/akhanolk/oozieProject/data/airawat-syslog/cdh-dn01/2013/05/';
+location '/user/akhanolk/oozieProject/data/kashit-syslog/cdh-dn01/2013/05/';
  
 Alter table SysLogEvents Add IF NOT EXISTS partition(node="cdh-dn02",year=2013, month=04)
-location '/user/akhanolk/oozieProject/data/airawat-syslog/cdh-dn02/2013/04/';
+location '/user/akhanolk/oozieProject/data/kashit-syslog/cdh-dn02/2013/04/';
 Alter table SysLogEvents Add IF NOT EXISTS partition(node="cdh-dn02",year=2013, month=05)
-location '/user/akhanolk/oozieProject/data/airawat-syslog/cdh-dn02/2013/05/';
+location '/user/akhanolk/oozieProject/data/kashit-syslog/cdh-dn02/2013/05/';
  
 Alter table SysLogEvents Add IF NOT EXISTS partition(node="cdh-dn03",year=2013, month=04)
-location '/user/akhanolk/oozieProject/data/airawat-syslog/cdh-dn03/2013/04/';
+location '/user/akhanolk/oozieProject/data/kashit-syslog/cdh-dn03/2013/04/';
 Alter table SysLogEvents Add IF NOT EXISTS partition(node="cdh-dn03",year=2013, month=05)
-location '/user/akhanolk/oozieProject/data/airawat-syslog/cdh-dn03/2013/05/';
+location '/user/akhanolk/oozieProject/data/kashit-syslog/cdh-dn03/2013/05/';
  
 Alter table SysLogEvents Add IF NOT EXISTS partition(node="cdh-jt01",year=2013, month=04)
-location '/user/akhanolk/oozieProject/data/airawat-syslog/cdh-jt01/2013/04/';
+location '/user/akhanolk/oozieProject/data/kashit-syslog/cdh-jt01/2013/04/';
 Alter table SysLogEvents Add IF NOT EXISTS partition(node="cdh-jt01",year=2013, month=05)
-location '/user/akhanolk/oozieProject/data/airawat-syslog/cdh-jt01/2013/05/';
+location '/user/akhanolk/oozieProject/data/kashit-syslog/cdh-jt01/2013/05/';
  
 Alter table SysLogEvents Add IF NOT EXISTS partition(node="cdh-nn01",year=2013, month=05)
-location '/user/akhanolk/oozieProject/data/airawat-syslog/cdh-nn01/2013/05/';
+location '/user/akhanolk/oozieProject/data/kashit-syslog/cdh-nn01/2013/05/';
  
 Alter table SysLogEvents Add IF NOT EXISTS partition(node="cdh-vms",year=2013, month=05)
-location '/user/akhanolk/oozieProject/data/airawat-syslog/cdh-vms/2013/05/';
+location '/user/akhanolk/oozieProject/data/kashit-syslog/cdh-vms/2013/05/';
 
 
 Hive ql to test data loaded

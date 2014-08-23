@@ -40,7 +40,7 @@ Directory structure applicable for this blog:
 ---------------------------------------------
 oozieProject
 data
-airawat-syslog
+kashit-syslog
 <<node>>
 <<year>>
 <<month>>

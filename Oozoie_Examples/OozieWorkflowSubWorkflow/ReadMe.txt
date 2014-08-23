@@ -48,7 +48,7 @@ Directory structure
 -------------------
 oozieProject
 	data
-		airawat-syslog
+		kashit-syslog
 			<<Node-Name>>
 				<<Year>>
 					<<Month>>
@@ -72,10 +72,10 @@ Mysql database setup tasks
 *********************************
 a) Create database:
 mysql>
-create database airawat;
+create database kashit;
 b) Switch to database created:
 mysql>
-use airawat;
+use kashit;
 c) Create destination table for sqoop export from hdfs:
 mysql>
 CREATE TABLE IF NOT EXISTS Logged_Process_Count_By_Year(
@@ -83,13 +83,13 @@ year_and_process varchar(100),
 occurrence INTEGER);
 d) Ensure your sqoop user has access to database created:
 mysql>
-grant all on airawat.* to myUser@'myMachine';
+grant all on kashit.* to myUser@'myMachine';
 
 
 Tryout the sqoop task- outside of workflow
 -------------------------------------------
 Use the dataset from my gist-
-https://gist.github.com/airawat/5970026
+https://gist.github.com/kashit/5970026
 *********************************
 Sqoop command
 *********************************
@@ -99,7 +99,7 @@ Pre-requisties:
 Command:
 --Run on node that acts as sqoop client;
 $ sqoop export \
---connect jdbc:mysql://cdh-dev01/airawat \
+--connect jdbc:mysql://cdh-dev01/kashit \
 --username devUser \
 --password myPwd \
 --table Logged_Process_Count_By_Year \

@@ -25,11 +25,11 @@
 				</property>
 				<property>
 					<name>mapreduce.map.class</name>
-					<value>airawat.oozie.samples.LogEventCountMapper</value>
+					<value>kashit.oozie.samples.LogEventCountMapper</value>
 				</property>
 				<property>
 					<name>mapreduce.reduce.class</name>
-					<value>airawat.oozie.samples.LogEventCountReducer</value>
+					<value>kashit.oozie.samples.LogEventCountReducer</value>
 				</property>
 				<property>
 					<name>mapred.mapoutput.key.class</name>

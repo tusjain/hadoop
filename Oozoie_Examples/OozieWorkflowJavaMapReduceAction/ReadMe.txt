@@ -43,23 +43,22 @@ Process = init:
 Log msg = tty (/dev/tty6) main process (1208) killed by TERM signal
 
 
-02a. Data download
 -------------------
 Directory structure
 -------------------
 oozieProject
-data
-airawat-syslog
-<<Node-Name>>
-<<Year>>
-<<Month>>
-messages
-workflowJavaMapReduceAction
- 
-workflow.xml
-job.properties
-lib
-LogEventCount.jar
+	data
+		kashit-syslog
+			<<Node-Name>>
+				<<Year>>
+					<<Month>>
+						messages
+	
+	workflowJavaMapReduceAction
+		workflow.xml
+		job.properties
+	lib
+		LogEventCount.jar
 
 
 03-Hdfs load commands
@@ -70,7 +69,7 @@ $ hadoop fs -put oozieProject/* oozieProject/
 04D Commands to test the java program in isolation
 -----------------------------------------------
 a) Command to run the program
-$ hadoop jar oozieProject/workflowJavaMapReduceAction/lib/LogEventCount.jar airawat.oozie.samples.LogEventCount "oozieProject/data/*/*/*/*/*" "oozieProject/workflowJavaMapReduceAction/myCLIOutput"
+$ hadoop jar oozieProject/workflowJavaMapReduceAction/lib/LogEventCount.jar kashit.oozie.samples.LogEventCount "oozieProject/data/*/*/*/*/*" "oozieProject/workflowJavaMapReduceAction/myCLIOutput"
 b) Command to view results
 $ hadoop fs -cat oozieProject/workflowJavaMapReduceAction/myCLIOutput/part* | sort
  

@@ -39,7 +39,7 @@ Log msg = tty (/dev/tty6) main process (1208) killed by TERM signal
 -------------------------------------------------------
 oozieProject
 	data
-		airawat-syslog
+		kashit-syslog
 			<<Node-Name>>
 				<<Year>>
 					<<Month>>
