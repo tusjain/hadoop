@@ -18,5 +18,4 @@ public class MapReduceCustomAction extends MapReduceActionExecutor {
   public void submitLauncher(FileSystem actionFs, Context context, WorkflowAction action) throws ActionExecutorException {
     super.submitLauncher(actionFs, context, action);
   }
-
 }
