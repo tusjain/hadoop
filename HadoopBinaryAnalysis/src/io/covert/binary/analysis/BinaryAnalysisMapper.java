@@ -18,9 +18,7 @@ package io.covert.binary.analysis;
 
 import io.covert.util.Utils;
 
-import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
-import java.io.DataInputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;

@@ -3,7 +3,6 @@ package user.defined.configuration.parameters;
 import java.io.IOException;
 
 import org.apache.hadoop.io.Text;
-import org.apache.hadoop.mapreduce.Mapper.Context;
 
 /**
  * 

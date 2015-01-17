@@ -5,7 +5,6 @@ import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.conf.Configured;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
-import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.Mapper;
@@ -42,7 +41,6 @@ public class TestMain extends Configured implements Tool{
     FileOutputFormat.setOutputPath(job, new Path(args[1]));
     job.submit();
     job.waitForCompletion(true);
-    
     return 0;
   }
   
@@ -57,5 +55,4 @@ public class TestMain extends Configured implements Tool{
         }
     }
   }
-
 }

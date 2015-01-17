@@ -68,6 +68,6 @@
 	<classpathentry kind="lib" path="/home/cloudera/lib/mrunit-0.9.0-incubating-hadoop2.jar"/>
 	<classpathentry kind="lib" path="/home/cloudera/tusharCustom/lib/hadoop-common-2.0.0-cdh4.3.0-tests.jar"/>
 	<classpathentry kind="lib" path="/home/cloudera/tusharCustom/lib/hadoop-hdfs-2.0.0-cdh4.3.0-tests.jar"/>
-	<classpathentry kind="lib" path="/home/cloudera/tusharCustom/lib/hadoop-test-2.0.0-mr1-cdh4.3.0.jar"/>
+	<classpathentry kind="lib" path="/home/cloudera/tusharCustom/lib/hadoop-test-2.0.0-mr1-cdh4.1.4.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -6,7 +6,6 @@ import java.util.Set;
 
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
-import org.apache.hadoop.mapreduce.Reducer.Context;
 
 	//the type parameters are the input keys type, the input values type, the output keys type, the output values type
 

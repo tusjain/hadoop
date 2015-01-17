@@ -4,7 +4,6 @@ import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 import org.apache.hadoop.mapreduce.Reducer;
 
-import HadoopGTK.EnumerateTriads;
 import HadoopGTK.EnumerateTriads.TriadCombiner;
 import HadoopGTK.EnumerateTriads.TriadMapper;
 import HadoopGTK.EnumerateTriads.TriadReducer;

@@ -5,7 +5,6 @@ import java.util.ArrayList;
 
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
-import org.apache.hadoop.mapreduce.Reducer.Context;
 
 // The combiner is an optimization for the reducer. This combiner eliminates the nodes which are associated with at most one edge
 // Thus the combiner reduces the bandwidth of data flowing to the reducer

@@ -8,7 +8,6 @@ import java.util.StringTokenizer;
 
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
-import org.apache.hadoop.mapreduce.Reducer.Context;
 
 /**
  * Reducer class for the intersection problem. The intermediate keys and values from the IntersectMapper form the input to the IntersectReducer.

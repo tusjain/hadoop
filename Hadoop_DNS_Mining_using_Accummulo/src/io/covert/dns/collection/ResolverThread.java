@@ -29,7 +29,6 @@ import java.util.concurrent.atomic.AtomicLong;
 
 import org.apache.commons.collections.Bag;
 import org.apache.commons.collections.bag.HashBag;
-import org.apache.hadoop.io.Text;
 import org.apache.log4j.Logger;
 import org.xbill.DNS.DClass;
 import org.xbill.DNS.Message;

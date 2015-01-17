@@ -1,1 +1,5 @@
 /ChainWordCountDriver.class
+/LastMapper.class
+/TokenizerMapper.class
+/UpperCaserMapper.class
+/WordCountReducer.class

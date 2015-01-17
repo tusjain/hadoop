@@ -4,8 +4,6 @@ import java.io.IOException;
 
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
-import org.apache.hadoop.mapreduce.Mapper.Context;
-
 
 /**
  * Description : Mapper class that prepares the data suitable for the DegreeReducer that checks if all the nodes are of even degree.

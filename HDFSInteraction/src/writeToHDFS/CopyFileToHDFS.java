@@ -23,7 +23,9 @@ public class CopyFileToHDFS {
 		//3. Get the HDFS instance
 		FileSystem hdfs = FileSystem.get(new URI("hdfs://localhost:54310"), configuration);
 		//4. Open a OutputStream to write the data, this can be obtained from the FileSytem
-		OutputStream outputStream = hdfs.create(new Path("hdfs://localhost:54310/user/hadoop/Hadoop_File.txt"),
+		//OutputStream outputStream = hdfs.create(new Path("hdfs://localhost:54310/user/hadoop/Hadoop_File.txt"),
+		
+		OutputStream outputStream = hdfs.create(new Path("hdfs://localhost:54310/user/cloudera/input/someOtherData.txt"),
 				new Progressable() {  
 			@Override
 			public void progress() {

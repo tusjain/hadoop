@@ -3,10 +3,8 @@
 package HadoopGTK;
 import java.io.IOException;
 import org.apache.hadoop.mapreduce.Mapper;
-import org.apache.hadoop.mapreduce.Mapper.Context;
 
 import org.apache.hadoop.io.Text;
-import org.apache.hadoop.io.LongWritable;
 
 /**
  *

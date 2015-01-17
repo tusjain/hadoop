@@ -3,7 +3,6 @@ package iterative.mapreduce.and.counter;
 import java.io.IOException;
 
 import org.apache.hadoop.io.Text;
-import org.apache.hadoop.mapreduce.Mapper.Context;
 
 /**
  * Description : Mapper class that implements the map part of Single-source shortest path algorithm. It extends the SearchMapper class. 

@@ -6,7 +6,6 @@ import java.util.StringTokenizer;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
-import org.apache.hadoop.mapreduce.Mapper.Context;
 
 /**
  * Mapper class that has the map method that outputs intermediate keys and values to be processed by the IntersectReducer.

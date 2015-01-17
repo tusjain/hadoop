@@ -4,7 +4,6 @@ import java.io.IOException;
 
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
-import org.apache.hadoop.mapreduce.Mapper.Context;
 
 	//The mapper class for enumerating the open triads (pairs of edges of the form {(A,B),(B,C)}
 	// The mapper records each edge under its low degree member

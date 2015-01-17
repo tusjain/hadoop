@@ -1,9 +1,5 @@
-/ConfigurationPrinter.class
 /MaxTemperatureDriver.class
 /MaxTemperatureDriverWithCombiner.class
 /MaxTemperatureDriverWithCompression.class
 /MaxTemperatureMapper.class
 /MaxTemperatureReducer.class
-/MultipleResourceConfigurationTest.class
-/SingleResourceConfigurationTest.class
-/improved

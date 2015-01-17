@@ -13,7 +13,13 @@ import org.apache.hadoop.util.ToolRunner;
 public class WithToolWordCountDriver extends Configured implements Tool{
 
 	public int run(String[] args) throws Exception {
-		if (args.length != 2) {
+		//if (args.length != 2) {
+		if (args.length < 2) {
+			/*System.out.println("args[0]   " + args[0]);
+			System.out.println("args[1]   " + args[1]);
+			System.out.println("args[2]   " + args[2]);
+			System.out.println("args[3]   " + args[3]);
+			System.out.println("args[4]   " + args[4]); */
 			System.out.println("usage: [input] [output]");
 			System.exit(-1);
 		}
@@ -35,10 +41,16 @@ public class WithToolWordCountDriver extends Configured implements Tool{
 		job.setOutputValueClass(IntWritable.class);
 
 		// Input
+		//If executing from Command prompt
+		FileInputFormat.addInputPath(job, new Path(args[1]));
+		//If executing from Eclipse
 		FileInputFormat.addInputPath(job, new Path(args[0]));
 		job.setInputFormatClass(TextInputFormat.class);
 
 		// Output
+		//If executing from Command prompt
+		FileOutputFormat.setOutputPath(job, new Path(args[2]));
+		//If executing from Eclipse
 		FileOutputFormat.setOutputPath(job, new Path(args[1]));
 		job.setOutputFormatClass(TextOutputFormat.class);
 		

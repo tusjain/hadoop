@@ -17,7 +17,7 @@
 					<value>${queueName}</value>
 				</property>
 			</configuration>
-			<main-class>Airawat.Oozie.Samples.LogEventCount</main-class>
+			<main-class>OozieJavaAPI.LogEventCount</main-class>
 			<arg>${inputDir}</arg>
 			<arg>${outputDir}</arg>
 		</java>

@@ -69,7 +69,7 @@
 	<classpathentry kind="lib" path="/home/cloudera/tusharCustom/commons-lang3-3.3.2/commons-lang3-3.3.2.jar"/>
 	<classpathentry kind="lib" path="/home/cloudera/tusharCustom/lib/hadoop-common-2.0.0-cdh4.3.0-tests.jar"/>
 	<classpathentry kind="lib" path="/home/cloudera/tusharCustom/lib/hadoop-hdfs-2.0.0-cdh4.3.0-tests.jar"/>
-	<classpathentry kind="lib" path="/home/cloudera/tusharCustom/lib/hadoop-test-2.0.0-mr1-cdh4.3.0.jar"/>
 	<classpathentry kind="lib" path="/home/cloudera/tusharCustom/lib/testng-6.8.jar"/>
+	<classpathentry kind="lib" path="/home/cloudera/tusharCustom/lib/hadoop-test-2.0.0-mr1-cdh4.1.4.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

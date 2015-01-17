@@ -4,7 +4,6 @@ import java.io.IOException;
 
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
-import org.apache.hadoop.mapreduce.Mapper.Context;
 
 // The second mapper in the process of augmenting the edges with the
 // degrees. This is an identity mapper where the output key is the edge and

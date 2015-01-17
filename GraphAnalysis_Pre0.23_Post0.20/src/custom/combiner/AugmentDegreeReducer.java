@@ -5,7 +5,6 @@ import java.util.ArrayList;
 
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
-import org.apache.hadoop.mapreduce.Reducer.Context;
 
 	//the reducer is used to aggregate the values associated with a particular key.
 	// the node is the input key and the values are the edges associated with the node

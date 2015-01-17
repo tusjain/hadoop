@@ -1,8 +1,5 @@
 package sorting.fearure.of.mapreduce;
 
-import iterative.mapreduce.and.counter.SearchMapperSSSP;
-import iterative.mapreduce.and.counter.SearchReducerSSSP;
-
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;

@@ -4,7 +4,6 @@ import java.io.IOException;
 
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
-import org.apache.hadoop.mapreduce.Mapper.Context;
 
 	//AugmentDegreeMapper is a part of the job to augment the edges with the degree of the nodes present in it
 	// the type parameters are the input keys type, the input values type, the output keys type, the output values type

@@ -3,7 +3,6 @@ package iterative.mapreduce.and.counter;
 import java.io.IOException;
 
 import org.apache.hadoop.io.Text;
-import org.apache.hadoop.mapreduce.Reducer.Context;
 
 /**
  * 

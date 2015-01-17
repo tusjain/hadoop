@@ -3,7 +3,6 @@ package multiple.mappers.and.reducers;
 import java.io.IOException;
 
 import org.apache.hadoop.io.Text;
-import org.apache.hadoop.mapreduce.Mapper.Context;
 
 import HadoopGTK.Node;
 import HadoopGTK.SearchMapper;

@@ -12,7 +12,6 @@ import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 import org.apache.hadoop.mapreduce.lib.partition.HashPartitioner;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import testing.nounitest.WordCountNoTestsMapper;
 
 import java.io.IOException;
 import java.text.DateFormat;
