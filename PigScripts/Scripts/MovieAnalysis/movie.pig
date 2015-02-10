@@ -14,5 +14,3 @@ DUMP movies_greater_than_four
 # store data file
 
 store movies_greater_than_four into '/user/hduser/movies_greater_than_four'
-
-
